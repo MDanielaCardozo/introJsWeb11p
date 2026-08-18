@@ -5,6 +5,7 @@
 
 let saldo = 100000;
 
+do{
 const opcion = prompt(
   "Ingresa una opcion: 1-consultar el sado - 2-Ingresar dinero - 3-extraer dinero",
 );
@@ -38,7 +39,8 @@ switch (opcion) {
   default:
     alert("Ingresaste una opcion erronea")
     break;
-}
+} 
+} while(confirm("Queres realizar otra operacion"));
 
 //Ejemplo de lo que debemos evitar
 /* if (opcion === 1) {
